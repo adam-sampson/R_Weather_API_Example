@@ -28,7 +28,7 @@ forecast <- function(zip = '40202',days = 7) {
   base_url <- "http://api.apixu.com/v1"
   base_curr_url <- "/current.xml"
   base_fore_url <- "/forecast.json"
-  api_key <- "6302d368ab0647eebb1235504173003"
+  api_key <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" #intentionally masked...get your own key...
   curr_url <- paste0(base_url,base_curr_url,"?key=",api_key,"&q=",zip)
   fore_url <- paste0(base_url,base_fore_url,"?key=",api_key,"&q=",zip,"&days=",as.character(days))
   
